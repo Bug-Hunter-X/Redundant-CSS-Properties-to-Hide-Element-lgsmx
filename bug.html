@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    //Incorrect attempt to hide the div
+    document.getElementById("myDiv").style.display = "none";  
+    document.getElementById("myDiv").style.visibility = "hidden"; //redundant
+  </script>
+</body>
+</html>
